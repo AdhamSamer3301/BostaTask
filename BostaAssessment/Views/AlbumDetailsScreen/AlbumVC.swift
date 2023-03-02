@@ -20,7 +20,9 @@ class AlbumVC: UIViewController {
         }
     }
 
+    @IBOutlet weak var nameLabel: UILabel!
     var albumId: Int?
+    var albumName: String?
     var photos: [Photo]?
     var searchPhotos: [Photo]?
     var viewModelObj = ViewModel()
@@ -34,6 +36,7 @@ class AlbumVC: UIViewController {
         viewModelObj.getPhotos(albumId: albumId ?? 0)
         viewModelObj.bindPhotosToAlbumVC = { () in
             self.renderPhotos()
+            self.nameLabel.text = self.albumName
             indicator.stopAnimating()
             
         }
@@ -42,6 +45,7 @@ class AlbumVC: UIViewController {
     func renderPhotos(){
         DispatchQueue.main.async {
             self.photos = self.viewModelObj.photos
+            self.searchPhotos = self.viewModelObj.photos
             self.photosCV.reloadData()
         }
     }
@@ -71,4 +75,18 @@ extension AlbumVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,
 // MARK: Search
 
 extension AlbumVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        photos = []
+        if searchText == "" {
+                    photos = searchPhotos
+                }
+        for photo in searchPhotos ?? [] {
+            if  photo.title.lowercased().contains(searchText.lowercased()){
+                photos?.append(photo)
+                
+            }
+        }
+        self.photosCV.reloadData()
+    }
 }

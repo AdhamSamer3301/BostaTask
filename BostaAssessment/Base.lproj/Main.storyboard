@@ -16,26 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoS-tO-nFn">
-                                <rect key="frame" x="15.999999999999993" y="107" width="101.33333333333331" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFx-UL-gHz">
-                                <rect key="frame" x="16" y="157" width="70.666666666666671" height="32.333333333333343"/>
+                                <rect key="frame" x="16" y="118.99999999999999" width="70.666666666666671" height="32.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4g-3d-q2w">
-                                <rect key="frame" x="16" y="197.33333333333334" width="345" height="21.666666666666657"/>
+                                <rect key="frame" x="16" y="159.33333333333334" width="345" height="21.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pIr-cs-Eoa">
-                                <rect key="frame" x="16" y="227" width="361" height="591"/>
+                                <rect key="frame" x="16" y="189" width="361" height="629"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SWs-eg-Iru">
@@ -53,9 +47,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pIr-cs-Eoa" secondAttribute="bottom" id="1Ry-dv-aBu"/>
-                            <constraint firstItem="zFx-UL-gHz" firstAttribute="top" secondItem="OoS-tO-nFn" secondAttribute="bottom" constant="8" id="6VX-ry-Xnd"/>
-                            <constraint firstItem="OoS-tO-nFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MNy-zP-cA6"/>
-                            <constraint firstItem="OoS-tO-nFn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="PR0-Am-ze3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e4g-3d-q2w" secondAttribute="trailing" constant="32" id="QPB-pO-Qxw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zFx-UL-gHz" secondAttribute="trailing" symbolic="YES" id="WCV-a8-MVW"/>
                             <constraint firstItem="e4g-3d-q2w" firstAttribute="top" secondItem="zFx-UL-gHz" secondAttribute="bottom" constant="8" id="ckH-JU-nhe"/>
@@ -63,8 +54,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pIr-cs-Eoa" secondAttribute="trailing" constant="16" id="kyM-fb-5yo"/>
                             <constraint firstItem="e4g-3d-q2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="owp-hk-NdB"/>
                             <constraint firstItem="pIr-cs-Eoa" firstAttribute="top" secondItem="e4g-3d-q2w" secondAttribute="bottom" constant="8" id="tMC-bE-LTK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OoS-tO-nFn" secondAttribute="trailing" symbolic="YES" id="vnP-rP-aRY"/>
                             <constraint firstItem="zFx-UL-gHz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xaw-J8-txL"/>
+                            <constraint firstItem="zFx-UL-gHz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="yyN-7z-SYa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="y1S-yE-JvF"/>
@@ -94,7 +85,7 @@
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qUL-Zw-xqL">
-                                <rect key="frame" x="16" y="119" width="361" height="699"/>
+                                <rect key="frame" x="16" y="173.66666666666669" width="361" height="644.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6SB-YP-yci">
                                     <size key="itemSize" width="0.0" height="0.0"/>
@@ -104,20 +95,30 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsy-zH-sIm">
+                                <rect key="frame" x="16" y="123.00000000000001" width="361" height="34.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3dl-6v-IpV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qUL-Zw-xqL" firstAttribute="top" secondItem="Y29-UZ-aS0" secondAttribute="bottom" constant="4" id="38D-i5-N3G"/>
                             <constraint firstItem="Y29-UZ-aS0" firstAttribute="trailing" secondItem="3dl-6v-IpV" secondAttribute="trailing" id="7Mm-km-m32"/>
                             <constraint firstItem="Y29-UZ-aS0" firstAttribute="leading" secondItem="3dl-6v-IpV" secondAttribute="leading" constant="8" id="D8J-3E-QCU"/>
                             <constraint firstItem="3dl-6v-IpV" firstAttribute="trailing" secondItem="qUL-Zw-xqL" secondAttribute="trailing" constant="16" id="N60-lI-Vpj"/>
                             <constraint firstItem="Y29-UZ-aS0" firstAttribute="top" secondItem="3dl-6v-IpV" secondAttribute="top" id="N74-OR-OzU"/>
+                            <constraint firstItem="Wsy-zH-sIm" firstAttribute="leading" secondItem="3dl-6v-IpV" secondAttribute="leading" constant="16" id="Rcj-Lg-34c"/>
                             <constraint firstItem="qUL-Zw-xqL" firstAttribute="bottom" secondItem="3dl-6v-IpV" secondAttribute="bottom" id="UQL-s2-YMr"/>
                             <constraint firstItem="qUL-Zw-xqL" firstAttribute="leading" secondItem="3dl-6v-IpV" secondAttribute="leading" constant="16" id="csM-YA-E3e"/>
+                            <constraint firstItem="3dl-6v-IpV" firstAttribute="trailing" secondItem="Wsy-zH-sIm" secondAttribute="trailing" constant="16" id="h2P-aP-dPr"/>
+                            <constraint firstItem="qUL-Zw-xqL" firstAttribute="top" secondItem="Wsy-zH-sIm" secondAttribute="bottom" constant="16" id="iZo-Zv-pVH"/>
+                            <constraint firstItem="Wsy-zH-sIm" firstAttribute="top" secondItem="Y29-UZ-aS0" secondAttribute="bottom" constant="8" id="mKs-sm-uoA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nameLabel" destination="Wsy-zH-sIm" id="AcC-zU-efU"/>
                         <outlet property="photosCV" destination="qUL-Zw-xqL" id="NAT-Qa-tdT"/>
                         <outlet property="searchBar" destination="Y29-UZ-aS0" id="Ha2-Op-z2l"/>
                     </connections>

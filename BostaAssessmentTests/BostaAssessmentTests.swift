@@ -30,4 +30,17 @@ final class BostaAssessmentTests: XCTestCase {
         }
         waitForExpectations(timeout: 3, handler: nil)
     }
+    func testFetchPhotos() throws {
+        let expectaion = expectation(description: "Waiting for the API to get Photos")
+        NetworkService.fetchPhotos(albumID: 1) { photos in
+            guard let photos = photos else {
+                XCTFail("No Data")
+                expectaion.fulfill()
+                return
+            }
+            XCTAssertNotEqual(photos.count, 0)
+            expectaion.fulfill()
+        }
+        waitForExpectations(timeout: 3, handler: nil)
+    }
 }

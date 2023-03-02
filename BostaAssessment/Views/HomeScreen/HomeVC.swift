@@ -72,6 +72,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let albumsVC = self.storyboard?.instantiateViewController(withIdentifier: "albumVC") as! AlbumVC
         albumsVC.albumId = albums[indexPath.row].id
+        albumsVC.albumName = albums[indexPath.row].title
         self.navigationController?.pushViewController(albumsVC, animated: true)
     }
 }
