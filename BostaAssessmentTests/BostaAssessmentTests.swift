@@ -5,11 +5,10 @@
 //  Created by Adham Samer on 28/02/2023.
 //
 
-import XCTest
 @testable import BostaAssessment
+import XCTest
 
 final class BostaAssessmentTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,19 +17,17 @@ final class BostaAssessmentTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFetchAlbums() throws {
+        let expectaion = expectation(description: "Waiting for the API to get Albums")
+        NetworkService.fetchAlbums(userID: 2) { albums in
+            guard let albums = albums else {
+                XCTFail("No Data")
+                expectaion.fulfill()
+                return
+            }
+            XCTAssertNotEqual(albums.count, 0)
+            expectaion.fulfill()
         }
+        waitForExpectations(timeout: 3, handler: nil)
     }
-
 }

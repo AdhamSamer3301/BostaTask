@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEA9CD7329B0395300672E37 /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CD7129B0395300672E37 /* PhotoCVCell.swift */; };
+		DEA9CD7429B0395300672E37 /* PhotoCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA9CD7229B0395300672E37 /* PhotoCVCell.xib */; };
 		DED98EF929AE70BD00AD3E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98EF829AE70BD00AD3E47 /* AppDelegate.swift */; };
 		DED98EFB29AE70BD00AD3E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98EFA29AE70BD00AD3E47 /* SceneDelegate.swift */; };
-		DED98EFD29AE70BD00AD3E47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98EFC29AE70BD00AD3E47 /* ViewController.swift */; };
+		DED98EFD29AE70BD00AD3E47 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98EFC29AE70BD00AD3E47 /* HomeVC.swift */; };
 		DED98F0029AE70BD00AD3E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED98EFE29AE70BD00AD3E47 /* Main.storyboard */; };
 		DED98F0329AE70BD00AD3E47 /* BostaAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DED98F0129AE70BD00AD3E47 /* BostaAssessment.xcdatamodeld */; };
 		DED98F0529AE70BF00AD3E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED98F0429AE70BF00AD3E47 /* Assets.xcassets */; };
@@ -17,6 +19,15 @@
 		DED98F1329AE70C000AD3E47 /* BostaAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F1229AE70C000AD3E47 /* BostaAssessmentTests.swift */; };
 		DED98F1D29AE70C000AD3E47 /* BostaAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F1C29AE70C000AD3E47 /* BostaAssessmentUITests.swift */; };
 		DED98F1F29AE70C000AD3E47 /* BostaAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F1E29AE70C000AD3E47 /* BostaAssessmentUITestsLaunchTests.swift */; };
+		DED98F3429AE712400AD3E47 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F3329AE712400AD3E47 /* ViewModel.swift */; };
+		DED98F3629AE713000AD3E47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F3529AE713000AD3E47 /* User.swift */; };
+		DED98F3829AE713900AD3E47 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F3729AE713900AD3E47 /* Album.swift */; };
+		DED98F3B29AE718200AD3E47 /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F3A29AE718200AD3E47 /* AlbumVC.swift */; };
+		DED98F3E29AE746400AD3E47 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DED98F3D29AE746400AD3E47 /* Kingfisher */; };
+		DED98F4129AE78AC00AD3E47 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DED98F4029AE78AC00AD3E47 /* Alamofire */; };
+		DED98F4429AE7B3D00AD3E47 /* FetchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F4329AE7B3D00AD3E47 /* FetchProtocols.swift */; };
+		DED98F4629AE7B4A00AD3E47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F4529AE7B4A00AD3E47 /* NetworkService.swift */; };
+		DED98F4829AEC9A900AD3E47 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED98F4729AEC9A900AD3E47 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEA9CD7129B0395300672E37 /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
+		DEA9CD7229B0395300672E37 /* PhotoCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCVCell.xib; sourceTree = "<group>"; };
 		DED98EF529AE70BD00AD3E47 /* BostaAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED98EF829AE70BD00AD3E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED98EFA29AE70BD00AD3E47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DED98EFC29AE70BD00AD3E47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DED98EFC29AE70BD00AD3E47 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DED98EFF29AE70BD00AD3E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED98F0229AE70BD00AD3E47 /* BostaAssessment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BostaAssessment.xcdatamodel; sourceTree = "<group>"; };
 		DED98F0429AE70BF00AD3E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +64,13 @@
 		DED98F1829AE70C000AD3E47 /* BostaAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED98F1C29AE70C000AD3E47 /* BostaAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaAssessmentUITests.swift; sourceTree = "<group>"; };
 		DED98F1E29AE70C000AD3E47 /* BostaAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DED98F3329AE712400AD3E47 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DED98F3529AE713000AD3E47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DED98F3729AE713900AD3E47 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		DED98F3A29AE718200AD3E47 /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
+		DED98F4329AE7B3D00AD3E47 /* FetchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProtocols.swift; sourceTree = "<group>"; };
+		DED98F4529AE7B4A00AD3E47 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DED98F4729AEC9A900AD3E47 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED98F3E29AE746400AD3E47 /* Kingfisher in Frameworks */,
+				DED98F4129AE78AC00AD3E47 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEA9CD6E29B0392400672E37 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9CD6F29B0392900672E37 /* Album */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEA9CD6F29B0392900672E37 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9CD7129B0395300672E37 /* PhotoCVCell.swift */,
+				DEA9CD7229B0395300672E37 /* PhotoCVCell.xib */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
 		DED98EEC29AE70BD00AD3E47 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +140,12 @@
 		DED98EF729AE70BD00AD3E47 /* BostaAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				DED98EF829AE70BD00AD3E47 /* AppDelegate.swift */,
-				DED98EFA29AE70BD00AD3E47 /* SceneDelegate.swift */,
-				DED98EFC29AE70BD00AD3E47 /* ViewController.swift */,
+				DED98F2F29AE70E700AD3E47 /* Assets */,
+				DED98F2E29AE70E200AD3E47 /* Core */,
+				DED98F2D29AE70DC00AD3E47 /* Views */,
+				DED98F2C29AE70D400AD3E47 /* ViewModel */,
+				DED98F2B29AE70CB00AD3E47 /* Model */,
 				DED98EFE29AE70BD00AD3E47 /* Main.storyboard */,
-				DED98F0429AE70BF00AD3E47 /* Assets.xcassets */,
-				DED98F0629AE70BF00AD3E47 /* LaunchScreen.storyboard */,
 				DED98F0929AE70BF00AD3E47 /* Info.plist */,
 				DED98F0129AE70BD00AD3E47 /* BostaAssessment.xcdatamodeld */,
 			);
@@ -130,6 +169,86 @@
 			path = BostaAssessmentUITests;
 			sourceTree = "<group>";
 		};
+		DED98F2B29AE70CB00AD3E47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F4229AE7B2500AD3E47 /* NetworkService */,
+				DED98F3529AE713000AD3E47 /* User.swift */,
+				DED98F3729AE713900AD3E47 /* Album.swift */,
+				DED98F4729AEC9A900AD3E47 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DED98F2C29AE70D400AD3E47 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F3329AE712400AD3E47 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DED98F2D29AE70DC00AD3E47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9CD6E29B0392400672E37 /* Cells */,
+				DED98F3929AE714600AD3E47 /* LaunchScreen */,
+				DED98F3129AE710900AD3E47 /* AlbumDetailsScreen */,
+				DED98F3029AE710200AD3E47 /* HomeScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED98F2E29AE70E200AD3E47 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DED98EF829AE70BD00AD3E47 /* AppDelegate.swift */,
+				DED98EFA29AE70BD00AD3E47 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DED98F2F29AE70E700AD3E47 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F0429AE70BF00AD3E47 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DED98F3029AE710200AD3E47 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DED98EFC29AE70BD00AD3E47 /* HomeVC.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DED98F3129AE710900AD3E47 /* AlbumDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F3A29AE718200AD3E47 /* AlbumVC.swift */,
+			);
+			path = AlbumDetailsScreen;
+			sourceTree = "<group>";
+		};
+		DED98F3929AE714600AD3E47 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F0629AE70BF00AD3E47 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		DED98F4229AE7B2500AD3E47 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				DED98F4329AE7B3D00AD3E47 /* FetchProtocols.swift */,
+				DED98F4529AE7B4A00AD3E47 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +265,10 @@
 			dependencies = (
 			);
 			name = BostaAssessment;
+			packageProductDependencies = (
+				DED98F3D29AE746400AD3E47 /* Kingfisher */,
+				DED98F4029AE78AC00AD3E47 /* Alamofire */,
+			);
 			productName = BostaAssessment;
 			productReference = DED98EF529AE70BD00AD3E47 /* BostaAssessment.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +341,10 @@
 				Base,
 			);
 			mainGroup = DED98EEC29AE70BD00AD3E47;
+			packageReferences = (
+				DED98F3C29AE746400AD3E47 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DED98F3F29AE78AC00AD3E47 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DED98EF629AE70BD00AD3E47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +363,7 @@
 			files = (
 				DED98F0829AE70BF00AD3E47 /* LaunchScreen.storyboard in Resources */,
 				DED98F0529AE70BF00AD3E47 /* Assets.xcassets in Resources */,
+				DEA9CD7429B0395300672E37 /* PhotoCVCell.xib in Resources */,
 				DED98F0029AE70BD00AD3E47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +389,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED98EFD29AE70BD00AD3E47 /* ViewController.swift in Sources */,
+				DED98F4629AE7B4A00AD3E47 /* NetworkService.swift in Sources */,
+				DED98F3429AE712400AD3E47 /* ViewModel.swift in Sources */,
+				DEA9CD7329B0395300672E37 /* PhotoCVCell.swift in Sources */,
+				DED98EFD29AE70BD00AD3E47 /* HomeVC.swift in Sources */,
+				DED98F3B29AE718200AD3E47 /* AlbumVC.swift in Sources */,
+				DED98F3629AE713000AD3E47 /* User.swift in Sources */,
 				DED98EF929AE70BD00AD3E47 /* AppDelegate.swift in Sources */,
 				DED98EFB29AE70BD00AD3E47 /* SceneDelegate.swift in Sources */,
+				DED98F4829AEC9A900AD3E47 /* Photo.swift in Sources */,
+				DED98F4429AE7B3D00AD3E47 /* FetchProtocols.swift in Sources */,
+				DED98F3829AE713900AD3E47 /* Album.swift in Sources */,
 				DED98F0329AE70BD00AD3E47 /* BostaAssessment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +742,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DED98F3C29AE746400AD3E47 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		DED98F3F29AE78AC00AD3E47 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DED98F3D29AE746400AD3E47 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DED98F3C29AE746400AD3E47 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DED98F4029AE78AC00AD3E47 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DED98F3F29AE78AC00AD3E47 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DED98F0129AE70BD00AD3E47 /* BostaAssessment.xcdatamodeld */ = {
