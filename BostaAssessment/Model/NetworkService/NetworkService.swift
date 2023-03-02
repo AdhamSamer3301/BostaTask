@@ -8,8 +8,7 @@
 import Alamofire
 import Foundation
 class NetworkService: GET_ALBUMS, GET_PHOTOS, GET_USER {
-    
-    static func fetchUser(id:Int,completionHandler: @escaping (User?) -> Void) {
+    static func fetchUser(id: Int, completionHandler: @escaping (User?) -> Void) {
         let url = "https://jsonplaceholder.typicode.com/users/\(id)"
         AF.request(url)
             .responseDecodable(of: User.self) { response in
@@ -17,10 +16,9 @@ class NetworkService: GET_ALBUMS, GET_PHOTOS, GET_USER {
                     return
                 }
                 completionHandler(response)
-                print(response.name ?? "")
             }
     }
-    
+
     static func fetchAlbums(userID: Int, completionHandler: @escaping ([Album]?) -> Void) {
         let url = "https://jsonplaceholder.typicode.com/albums?=\(userID)"
         let request = NSURLRequest(url: URL(string: url)!)
@@ -42,6 +40,22 @@ class NetworkService: GET_ALBUMS, GET_PHOTOS, GET_USER {
     }
 
     static func fetchPhotos(albumID: Int, completionHandler: @escaping ([Photo]?) -> Void) {
-        print("")
+        let url = "https://jsonplaceholder.typicode.com/photos?albumId=\(albumID)"
+        
+        AF.request(url).response { response in
+            switch response.result {
+                case .success(let data):
+                    do{
+                        let json = try JSONDecoder().decode([Photo]?.self, from: data!)
+                        completionHandler(json)
+                    }catch{
+                        print(String(describing: error))
+                        completionHandler(nil)
+                    }
+                case .failure(let error):
+                    print(String(describing: error))
+                    completionHandler(nil)
+            }
+        }
     }
 }
